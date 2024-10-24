@@ -1,0 +1,153 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 0.8rem;
+}
+
+header h2 {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
+.todo-list li.completed label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-list .view {
+  display: flex;
+  align-items: center;
+  width: 200%;
+}
+
+.todo-list input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+.todo-list label {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.todo-list .destroy {
+  display: none;
+  background: none;
+  border: none;
+  color: #cc9a9a;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.todo-list li:hover .destroy {
+  display: block;
+}
+
+.todo-list .editing .view {
+  display: none;
+}
+
+.todo-list .editing input[type="text"] {
+  margin: 0;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.filters a {
+  color: #aaa9a9;
+  text-decoration: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+}
+
+.filters a.active {
+  border: 1px solid #1d2d3f;
+  color: #223a55;
+}
+
+.clear-completed {
+  background: none;
+  border: none;
+  color: #777;
+  cursor: pointer;
+}
+
+.clear-completed:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #4d4d4d;
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto; 
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    #f5f5f5 50%
+  ),
+  linear-gradient(
+    45deg,
+    #270d7c 0%,
+    #4740c7 100%
+  );
+}
